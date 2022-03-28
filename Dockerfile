@@ -1,5 +1,6 @@
 FROM jupyter/base-notebook:latest
 
+USER root
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   build-essential libpoppler-cpp-dev pkg-config python3-dev
 
