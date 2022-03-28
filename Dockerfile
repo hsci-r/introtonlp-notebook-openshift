@@ -8,4 +8,5 @@ RUN fix-permissions /home/jovyan /opt/conda
 
 RUN pip install --no-cache-dir spacy feedparser pdftotext bs4 lxml
 
+ENV NB_GID=100
 USER 1000
